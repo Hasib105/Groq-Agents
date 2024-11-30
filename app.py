@@ -41,6 +41,12 @@ user_input = st.chat_input('Message to Assistant...')
 if user_input:
     with st.spinner("Generating response..."):
         response = generate_response(user_input)
-        st.write(response)  # Display the response content
-        st.markdown("Message: " + user_input)
+        # Display user's message and assistant's response in a formatted way
+        st.markdown("### Your Message:")
+        st.markdown(f"> {user_input}")  # Display user's message
+            
+        st.markdown("### Assistant's Response:")
+        st.markdown(f"> {response}")  # Display assistant's response
+            
+        # Optional: Add a separator for clarity
         st.markdown("---")

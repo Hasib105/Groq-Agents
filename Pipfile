@@ -12,6 +12,10 @@ langchain-groq = "*"
 langchain = "*"
 langchain-experimental = "*"
 tabulate = "*"
+langchain-openai = "*"
+pypdf = "*"
+langgraph = "*"
+matplotlib = "*"
 
 [dev-packages]
 
