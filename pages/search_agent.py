@@ -5,7 +5,10 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-tavily_api_key = os.getenv('TAVILY_API_KEY')
+if 'TAVILY_API_KEY' in os.environ:
+    tavily_key = os.getenv('TAVILY_API_KEY')
+else:
+    tavily_key = st.secrets["TAVILY_API_KEY"]
 
 # Initialize Tavily Search API
 tavily_search = TavilySearchResults(max_results=5)

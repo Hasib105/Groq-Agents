@@ -8,8 +8,13 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 # Load environment variables
 load_dotenv()
-api_key = os.getenv('GROQ_API_KEY')
-tavily_key = os.getenv('TAVILY_API_KEY')
+if 'GROQ_API_KEY' and 'TAVILY_API_KEY' in os.environ:
+    api_key = os.getenv('GROQ_API_KEY')
+    tavily_key = os.getenv('TAVILY_API_KEY')
+else:
+    api_key = st.secrets["GROQ_API_KEY"]
+    tavily_key = st.secrets["TAVILY_API_KEY"]
+
 
 # Initialize Groq client
 llm = ChatGroq(
