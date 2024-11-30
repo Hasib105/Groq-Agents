@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-if 'TAVILY_API_KEY' in os.environ:
+if os.getenv('TAVILY_API_KEY'):
     tavily_key = os.getenv('TAVILY_API_KEY')
 else:
     tavily_key = st.secrets["TAVILY_API_KEY"]

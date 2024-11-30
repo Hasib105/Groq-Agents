@@ -8,7 +8,7 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 # Load environment variables
 load_dotenv()
-if 'GROQ_API_KEY' and 'TAVILY_API_KEY' in os.environ:
+if os.getenv('GROQ_API_KEY') and os.getenv('TAVILY_API_KEY'):
     api_key = os.getenv('GROQ_API_KEY')
     tavily_key = os.getenv('TAVILY_API_KEY')
 else:
