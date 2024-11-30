@@ -35,7 +35,7 @@ def generate_response(user_input):
     except Exception as e:
         return f"An error occurred: {str(e)}"
 
-st.title("Groq API Response Streaming")
+st.title("Ask Groq AI 🤖")
 user_input = st.chat_input('Message to Assistant...')
 
 if user_input:
