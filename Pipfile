@@ -7,6 +7,11 @@ name = "pypi"
 python-dotenv = "*"
 streamlit = "*"
 groq = "*"
+pandas = "*"
+langchain-groq = "*"
+langchain = "*"
+langchain-experimental = "*"
+tabulate = "*"
 
 [dev-packages]
 
