@@ -1,4 +1,4 @@
-# Groq-Streamlit-Agent
+# Groq-Langchain-Agent
 This project is a Streamlit application that utilizes the LangChain library to create a chat agent that can be used to generate code based on human instructions. The agent is powered by the Groq API and can be used to generate code in a variety of programming languages.
 
 
