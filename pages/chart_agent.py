@@ -18,7 +18,7 @@ else:
 
 # Initialize Groq client
 llm = ChatGroq(
-    model="mixtral-8x7b-32768",
+    model="llama-3.1-8b-instant",
     temperature=0.1,
     max_tokens=150,
 )

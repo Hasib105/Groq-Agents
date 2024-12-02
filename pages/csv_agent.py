@@ -99,11 +99,4 @@ if st.session_state.csv_agent is not None:
             # Optional: Add a separator for clarity
             st.markdown("---")
 
-            # Example: Create a simple graph based on the DataFrame
-            if 'column_name' in st.session_state.df.columns:  # Replace with your actual column name
-                plt.figure(figsize=(10, 5))
-                st.session_state.df['column_name'].value_counts().plot(kind='bar')  # Replace with your desired plot
-                plt.title('Bar Chart of Column Name')  # Update title accordingly
-                plt.xlabel('Categories')  # Update xlabel accordingly
-                plt.ylabel('Counts')  # Update ylabel accordingly
-                st.pyplot(plt)  # Display the plot in Streamlit
+         
