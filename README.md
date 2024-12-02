@@ -7,6 +7,7 @@ This project is a Streamlit application that utilizes the LangChain library to c
 * AI Chat Bot for generating response based on human instructions
 * CSV Agent for generating response based on a CSV file
 * API Agent for generating response based on an API call
+* Chart Agent for generating charts based on data in a CSV file
 * Search engine Agent with Tavily
 
 ## Technologies Used
